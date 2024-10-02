@@ -1,5 +1,7 @@
 imbalanced_learn
 llama_index
+llama_index_llms_azure_openai
+llama_index_llms_ollama
 plotly
 scikit_learn
 seaborn

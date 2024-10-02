@@ -1,4 +1,4 @@
-# LlamaIndex: Automatic Machine Learning by LLM
+# LlamaIndex: Naïve Automatic Machine Learning by LLM
 This application leverages OpenAI's language models and LlamaIndex's agents and tools to provide users with automatic machine learning and data visualization of the upload file. 
 
 ![application homepage](./homepage.png)

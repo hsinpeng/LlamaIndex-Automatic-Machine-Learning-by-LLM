@@ -7,7 +7,7 @@ from visualization_worker import data_visualization_pipeline
 from automl.util_general import check_filesize_from_streamlit, read_file_from_streamlit
 from st_dev_info import stream_words, developer_info_simple_stream, developer_info_simple_static
 
-APP_TITLE = "LlamaIndex: Naive Automatic Machine Learning"
+APP_TITLE = "LlamaIndex: Naïve Automatic Machine Learning"
 AUTHOR = "Sheldon Hsin-Peng Lin"
 EMAIL = "hsinpeng168@gmail.com"
 GITHUB = "https://github.com/hsinpeng"
