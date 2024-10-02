@@ -32,6 +32,26 @@ cd LlamaIndex-Automatic-Machine-Learning-by-LLML
 python3 -m pip install -r requirements.txt
 ```
 
+Rename "secret_template.yaml" to "secret.yaml" and edit it for the proper LLM settings:
+```yaml
+model_type: "openai" # "openai" or "azure" or "ollama"
+# OpenAI
+openai_apikey: ""
+openai_model_name: ""
+# Azure OpenAI
+azure_apikey: ""
+azure_apibase: ""
+azure_apiversion: ""
+azure_llm_deployment: ""
+# Ollama
+ollama_model_name: ""
+ollama_request_timeout: 120
+ollama_base_url: "http://localhost:11434"
+# Others
+```
+
+Nate: The application supports OpenAI, AzureOpenAI and local Ollama LLM providers only. 😅
+
 ## Run the application
 
 ```bash
@@ -39,7 +59,16 @@ streamlit run app.py
 ```
  
 # Usage 📖
-Under Construction.
+
+Thanks to the graphical user interface, the usage of this application is pretty tuitive. 🤓
+
+1. Upload your data file. We only support CSV, XLS, XLSX, XLSM, and XLSB file types with 200MB size limitation. 📂
+2. Select a proper analysis mode. Default mode is AutoML, LLM agent will decide which mode works best for your data. ❓
+3. Click the "Start Analysis" button. The LLM agent will perform data analysis first by tool calling. 💡
+4. After reviewing the analysis report, then Click the "Start Training Model" button. The LLM agent will perform machine learning tasks by tool calling. 🖥️
+5. Top 3 best models and their evaluation reports will be displayed right after ML tasks are finished. You can download the preferred model for later use. 📥
+
+Note: If you don't have a suitable data file. [Sample datasets](https://github.com/hsinpeng/sample_datasets.git) are provided on my github as well.
 
 
 # Features ✨
