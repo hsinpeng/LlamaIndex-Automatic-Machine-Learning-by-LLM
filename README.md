@@ -72,15 +72,22 @@ Note: If you don't have a suitable data file. [Sample datasets](https://github.c
 
 
 # Features ✨
-Under Construction.
+- Natural language interface for performing data visualization and machine learning by LLM agent and tools. 📊
+- Support variouse analysis modes(classification, regression and clustering), models and file types fo dataset. 📄
+- Implementation of LlamaIndex. (Note that most of the related projects are developed by LangChain) 👍
 
 
 # Limitations ⚠️
-Under Construction.
+- Cannot deal with non-tabular data, or extract tabular data from unsupported file types. 💔
+- Cannot deal with large datasets since the LLM has its token limitation. 🚫
+- The data is not cached, including final models and analysis reports as well. 🔄
 
 
 # Improvements 🚀
-Under Construction.
+- Voice interface: Convert user's speech to text and perform a machine learning task 🗣️
+- Third-party's data sources: Integrating internal and external data without file uploading 🤝
+- Data understanding: Isolating features of data profiling from existing analysis modes 📚
+- Perform intermediates checkings on the results to avoid LLM bias 🤔
 
 
 # Background 🧑‍🎓
@@ -90,4 +97,4 @@ This application is developed based on the above conditions, and I hope it can h
 
 
 # Acknowledgements 🙏
-Under Construction. ❤️
+The application is greatly inspired by [Streamline Analyst](https://github.com/Wilson-ZheLin/Streamline-Analyst.git) which implemented by LangChain. ❤️
